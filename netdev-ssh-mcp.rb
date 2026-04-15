@@ -5,21 +5,21 @@
 class NetdevSshMcp < Formula
   desc "MCP server for SSH-based network device operations (Arista EOS, Cisco NX-OS, IOS/IOS-XE)"
   homepage "https://github.com/krisiasty/netdev-ssh-mcp"
-  version "1.5.0"
+  version "1.6.0"
   license "Apache-2.0"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/krisiasty/netdev-ssh-mcp/releases/download/v1.5.0/netdev-ssh-mcp_1.5.0_darwin_amd64.tar.gz"
-    sha256 "fc1954a6c4dd55bbb649cbfb5cb7db3f2412b0fb6abcd834c06aa7e741bd5b9f"
+    url "https://github.com/krisiasty/netdev-ssh-mcp/releases/download/v1.6.0/netdev-ssh-mcp_1.6.0_darwin_amd64.tar.gz"
+    sha256 "44432aba0e6c89f2b9ec9a7507583ec3753dc8fd40b889f25e258dcef5fcb300"
 
     define_method(:install) do
       bin.install "netdev-ssh-mcp"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/krisiasty/netdev-ssh-mcp/releases/download/v1.5.0/netdev-ssh-mcp_1.5.0_darwin_arm64.tar.gz"
-    sha256 "655968e0269bee05963246b8b72360ff6407a448836c0333f7e34a2dfd3c25f8"
+    url "https://github.com/krisiasty/netdev-ssh-mcp/releases/download/v1.6.0/netdev-ssh-mcp_1.6.0_darwin_arm64.tar.gz"
+    sha256 "703cbaf11bc105d78cd0dc4568cdda817cb76a9317f77edfa04056dcb6512bb1"
 
     define_method(:install) do
       bin.install "netdev-ssh-mcp"
