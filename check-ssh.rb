@@ -13,6 +13,7 @@ class CheckSsh < Formula
   sha256 "561d977cb3c2bd9bb960182858fffedc42dee672a1e6fa27032d7d59e5efd566"
   license "Apache-2.0"
 
-  disable! date:    "2026-05-08",
-           because: "moved to a cask. Run: brew uninstall check-ssh && brew install --cask krisiasty/tap/check-ssh"
+  disable! date:             "2026-05-08",
+           because:          "moved to a cask",
+           replacement_cask: "krisiasty/tap/check-ssh"
 end
