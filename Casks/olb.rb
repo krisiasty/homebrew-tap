@@ -4,11 +4,11 @@ cask "olb" do
 
   on_macos do
     on_intel do
-      sha256 "135088117db4702412038657e65fd96a58b72f9cdac2db85934cb81cd90c68d5"
+      sha256 "3eb70701075f2143d71cabd903a1379fd234e067c7f1ac53a6658b8673c6f5d9"
       url "https://github.com/krisiasty/olb/releases/download/v#{version}/olb_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "dd72ef27d0d745c578a2e5111a3519bfaf43996f8236d07cd852cadc77f2c89b"
+      sha256 "2304297ef5ae13414acdea23d3042d4690ed2ec4b1091364c0e62e264cbb9e93"
       url "https://github.com/krisiasty/olb/releases/download/v#{version}/olb_#{version}_darwin_arm64.tar.gz"
     end
   end
